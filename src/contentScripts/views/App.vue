@@ -71,7 +71,7 @@ const plugins: Plugin[] = [
 main()
 
 function main() {
-  if (!downloadButtonContainer || !onlineButtonContainer)
+  if (!downloadButtonContainer || !onlineButtonContainer || !movieName)
     return
 
   plugins.forEach((plugin) => {
