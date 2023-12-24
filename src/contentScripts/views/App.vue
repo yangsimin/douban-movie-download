@@ -40,6 +40,24 @@ const plugins: Plugin[] = [
     },
   },
   {
+    name: '音范丝4K',
+    type: 'download',
+    onClick: (movieName: string) => {
+      openUrlByForm('https://www.yinfans.me', 'get', {
+        s: movieName,
+      })
+    },
+  },
+  {
+    name: '磁力引擎',
+    type: 'download',
+    onClick: (movieName: string) => {
+      openUrlByForm('http://eclyq.one', 'post', {
+        q: movieName,
+      })
+    },
+  },
+  {
     name: 'LIBVIO',
     type: 'online',
     onClick: (movieName: string) => {
