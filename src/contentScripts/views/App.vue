@@ -66,6 +66,13 @@ const plugins: Plugin[] = [
       })
     },
   },
+  {
+    name: 'movie-web',
+    type: 'online',
+    onClick: (movieName: string) => {
+      window.open(`https://movie-web.app/browse/${movieName}`, '_blank')
+    },
+  },
 ]
 
 main()
